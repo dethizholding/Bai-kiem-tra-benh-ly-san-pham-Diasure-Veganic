@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn đề kiểm tra ngẫu nhiên - DIASURE VEGANIC </title>
+    <script>
+        window.onload = function() {
+            // Danh sách link đến các Google Form
+            const forms = [
+                "https://docs.google.com/forms/d/1hTVWRgXmgAHWHDQATTASAuw3A0MBk_yh7tMJ5YSrWgs/edit", // Thay bằng link Form 1
+                "https://docs.google.com/forms/d/1dWBxB5GBVKQDk4Ju7qhoS4_BTwybAacz_CXVf6B3yCg/edit", // Thay bằng link Form 2
+                "https://docs.google.com/forms/d/1yr-H-5djzYPARp7iwF21fcZVn78HKiGifnDZ9C3Z87Q/edit"  // Thay bằng link Form 3
+            ];
+
+            // Chọn ngẫu nhiên một link
+            const randomForm = forms[Math.floor(Math.random() * forms.length)];
+
+            // Chuyển hướng người dùng
+            window.location.href = randomForm;
+        };
+    </script>
+</head>
+<body>
+    <h1>Đang chuyển hướng...</h1>
+    <p>Nếu bạn không được chuyển hướng, hãy <a id="manualLink" href="#">bấm vào đây</a>.</p>
+    <script>
+        const forms = [
+            "https://docs.google.com/forms/d/1hTVWRgXmgAHWHDQATTASAuw3A0MBk_yh7tMJ5YSrWgs/edit", // Thay bằng link Form 1
+                "https://docs.google.com/forms/d/1dWBxB5GBVKQDk4Ju7qhoS4_BTwybAacz_CXVf6B3yCg/edit", // Thay bằng link Form 2
+                "https://docs.google.com/forms/d/1yr-H-5djzYPARp7iwF21fcZVn78HKiGifnDZ9C3Z87Q/edit"  // Thay bằng link Form 3
+        ];
+        document.getElementById('manualLink').href = forms[Math.floor(Math.random() * forms.length)];
+    </script>
+</body>
+</html>
